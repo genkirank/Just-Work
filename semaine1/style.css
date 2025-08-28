@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #6a5c55;
+  color: #333;
+  border: solid 8px #f66e00;
+  border-radius: 24px;
+  padding: 2%;
+  width: auto;
+  height: auto;
+}
+my-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f66e00;
+}
+container {
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.fstyle {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f66e00;
+}
+.center {
+  text-align: center;
+}
