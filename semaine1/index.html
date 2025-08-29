@@ -1,67 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My first Web Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+
   <header class="my-header">
+    <div class="logo fstyle">RL</div>
     <nav class="nav-bar">
-      <a class="fstyle">mail</a>
-      <a class="fstyle ">adress</a>
-      <a class="fstyle ">telephone </a>
+      <a href="#">Mail</a>
+      <a href="#">Adresse</a>
+      <a href="#">Téléphone</a>
     </nav>
   </header>
-  <container>
+
+  <div class="container">
+    <!-- Colonne 1 -->
     <div>
       <h1 class="fstyle center">Raphael Luis</h1>
-      <p class="fstyle">je veux devenir devlopeur j'ai 24 ans</p>
-      <ul class="my-list">
-        <li class="fstyle">Dev </li>
-        <li class="fstyle">jujitsu </li>
-
-        <li class="fstyle">mma</li>
+      <p>Je veux devenir développeur, j'ai 24 ans.</p>
+      <ul>
+        <li>Dev</li>
+        <li>Jiu-jitsu</li>
+        <li>MMA</li>
       </ul>
     </div>
+
+    <!-- Colonne 2 -->
     <section>
       <h2 class="fstyle center">Mes Projets</h2>
       <div class="projects">
         <div class="project-card">
           <h3 class="fstyle">Projet 1</h3>
-          <p class="fstyle">Description du projet 1</p>
-          <img
-            src="https://media.licdn.com/dms/image/D4D03AQH1jH5kX3Qm1g/profile-displayphoto-shrink_800_800/0/1683297034868?e=2147483647&v=beta&t=KXJHk2b9rYHk2X1F6nUu0kVfYt2r8b9c6U5rY3F5nA"
-            alt="My Photo" class="my-photo">
-          <a href="https://www.linkedin.com/in/raphael-luis-123456789/" target="_blank">My LinkedIn</a>
+          <p>Description du projet 1</p>
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+            alt="Photo de profil" class="my-photo" />
+
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">Mon LinkedIn</a>
+
           <form class="my-form">
             <label class="fstyle" for="name">Nom</label>
-            <input class="fstyle" id="name" type="text">
-            <button class="fstyle">Envoyer</button>
+            <input id="name" type="text" placeholder="Ton nom" />
+
+            <label class="fstyle" for="message">Message</label>
+            <textarea id="message" rows="3" placeholder="Ton message"></textarea>
+
+            <button type="submit" class="fstyle">Envoyer</button>
           </form>
+        </div>
+      </div>
     </section>
-  </container>
+  </div>
+
   <footer>
     <p class="fstyle center">© 2024 My First Web Page</p>
     <ul class="social-media">
-      <li><a href="https://www.instagram.com/">
+      <li>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
-            class="social-icon">
-        </a></li>
-      <li><a href="https://www.facebook.com/">
+            class="social-icon" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"
-            class="social-icon">
-        </a></li>
-      <li><a href="https://www.twitter.com/">
-          <img src="https://upload.wikimedia.org/wikipedia/fr/c/c8/Twitter_Bird.svg" alt="Twitter" class="social-icon">
-        </a></li>
+            class="social-icon" />
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/fr/c/c8/Twitter_Bird.svg" alt="Twitter"
+            class="social-icon" />
+        </a>
+      </li>
     </ul>
   </footer>
-  </div>
-  </div>
+
 </body>
 
 </html>
