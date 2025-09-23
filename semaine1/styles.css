@@ -50,6 +50,7 @@ body {
   grid-template-columns: 1fr 1fr; /* 2 colonnes desktop */
   gap: 24px;
   align-items: start;
+  position: relative;
 }
 
 /* BLOCS & TITRES */
@@ -93,6 +94,8 @@ ul {
   display: grid;
   gap: 8px;
   margin-top: 10px;
+  position: relative;
+  z-index: 1;
 }
 .my-form input,
 .my-form textarea {
@@ -102,15 +105,6 @@ ul {
 }
 .my-form button {
   padding: 10px 14px;
-  border: none;
-  border-radius: 6px;
-  background: #f66e00;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-}
-.my-form button:hover {
-  opacity: 0.9;
 }
 
 /* FOOTER */
@@ -140,5 +134,73 @@ footer {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+  }
+}
+
+/* ===== Contact page shared styles ===== */
+.contact-ghost {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: clamp(80px, 18vw, 220px);
+  color: #f66e00;
+  opacity: 0.15;
+  letter-spacing: 2px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+.my-form .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 48px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.field--full {
+  grid-column: 1 / -1;
+}
+.my-form label {
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #f66e00;
+  font-size: 18px;
+}
+.my-form input,
+.my-form textarea {
+  margin-bottom: 8px;
+  padding: 12px 6px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #f66e00;
+  outline: none;
+}
+.my-form input:focus,
+.my-form textarea:focus {
+  border-bottom-color: #e65c00;
+}
+.btn-send {
+  align-self: end;
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-send:hover {
+  opacity: 0.9;
+}
+@media (max-width: 700px) {
+  .my-form .grid {
+    grid-template-columns: 1fr;
+  }
+  .btn-send {
+    align-self: start;
   }
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My first Web Page</title>
+  <title>Contactez‑moi</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -13,74 +13,30 @@
   <header class="my-header">
     <div class="logo fstyle">RL</div>
     <nav class="nav-bar">
-      <a href="/semaine1/contact.html">contact</a>
+      <a href="contact.html">contact</a>
       <a href="#">Adresse</a>
       <a href="#">Téléphone</a>
     </nav>
   </header>
 
   <div class="container">
-    <!-- Colonne 1 -->
-    <div>
-      <h1 class="fstyle center">Raphael Luis</h1>
-      <p>Je veux devenir développeur, j'ai 24 ans.</p>
-      <ul>
-        <li>Dev</li>
-        <li>Jiu-jitsu</li>
-        <li>MMA</li>
-      </ul>
-    </div>
-
-    <!-- Colonne 2 -->
+    <h1 class="contact-ghost" aria-hidden="true">Contact</h1>
     <section>
-      <h2 class="fstyle center">Mes Projets</h2>
-      <div class="projects">
-        <div class="project-card">
-          <h3 class="fstyle">Projet 1</h3>
-          <p>Description du projet 1</p>
-
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
-            alt="Photo de profil" class="my-photo" />
-
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">Mon LinkedIn</a>
-
-          <form class="my-form">
+      <form class="my-form">
+        <div class="grid">
+          <div class="field">
             <label class="fstyle" for="name">Nom</label>
             <input id="name" type="text" placeholder="Ton nom" />
-
+          </div>
+          <div class="field field--full">
             <label class="fstyle" for="message">Message</label>
             <textarea id="message" rows="3" placeholder="Ton message"></textarea>
-
-            <button type="submit" class="fstyle">Envoyer</button>
-          </form>
+          </div>
         </div>
-      </div>
+        <button type="submit" class="fstyle btn-send">Envoyer</button>
+      </form>
     </section>
   </div>
-
-  <footer>
-    <p class="fstyle center">© 2024 My First Web Page</p>
-    <ul class="social-media">
-      <li>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
-            class="social-icon" />
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook"
-            class="social-icon" />
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/" target="_blank" rel="noopener">
-          <img src="https://upload.wikimedia.org/wikipedia/fr/c/c8/Twitter_Bird.svg" alt="Twitter"
-            class="social-icon" />
-        </a>
-      </li>
-    </ul>
-  </footer>
 
 </body>
 
